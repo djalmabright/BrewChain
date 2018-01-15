@@ -10,6 +10,7 @@ WORKDIR /usr/src/app
 # Install GYP dependencies globally, will be used to code build other dependencies
 RUN npm install -g --production node-gyp && \
     npm cache clean --force
+    
 
 # Install app dependencies
 COPY package.json /usr/src/app
